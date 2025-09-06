@@ -3,7 +3,7 @@ body {
 }
 
 .header_container {
-    background: linear-gradient(135deg, blue 50%, white 50%);
+    background: linear-gradient(135deg, blue 50%, whitesmoke 50%);
     color: white;
     display: flex;
     justify-content: center;
@@ -52,6 +52,30 @@ body {
     background: magenta;
 }
 
+#screenshot_project2 {
+    background: blue;
+}
+
+#screenshot_project3 {
+    background: #30bf91;
+}
+
+#screenshot_project4 {
+    background: brown;
+}
+
+#screenshot_project5 {
+    background: blueviolet;
+}
+
+#screenshot_project6 {
+    background: coral;
+}
+
+.work_container {
+    display: grid;
+}
+
 .footer_container {
     background: #115151;
     color: white;
@@ -75,69 +99,214 @@ body {
     margin-bottom: 1rem;
 }
 
-/*for mobile*/
-@media (max-width: 480px ) {
-
-.header_container {
-    padding: 2rem;
-}
-
-.header_text{
-    width: 480px;
-    height: 300px;
-    background: url("borisk.jpg") center/cover no-repeat;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 1rem;
-}
-
-.about_me_container {
-    flex-direction: column;
-    padding: 1rem;
-}
-
-.svg_icon_box {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-}
-
-.svg_icon_box svg {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-.project_container {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-}
-
-.project {
-    max-width: 480px;
-    height: 500px;
-}
-
 .project_container svg {
-   width: 1rem;
-   height: 1rem;
-}
-
-.footer_container {
-    flex-direction: column;
-}
-
-}
-
-/*for tablet*/
-@media (max-width: 768px ) {
-
+    width: 1rem;
+    height: 1rem;
 }
 
 /*for desktop*/
 @media (min-width: 769px) {
+
+    .left_side_footer {
+        flex: 0 0 50%;
+    }
+    .right_side_footer {
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .svg_icon_box svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .svg_icon_box {
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer_heading {
+        text-align: left;
+    }
+
+    .project_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1rem;
+        gap: 3rem;
+    }
+
+    .work_container {
+        padding-bottom: 5rem;
+    }
+
+    .project {
+        height: 400px;
+    }
+
+    #my_work {
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .about_me_container {
+        flex-direction: column;
+    }
+
+    .header_text{
+        width: 480px;
+        height: 300px;
+        background: url("borisk.jpg") center/cover no-repeat;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+   .content {
+       max-width: 1000px;
+       display: flex;
+       flex-direction: column;
+       justify-self: center;
+       align-items: center;
+   }
+
+   .about_me_container p {
+       max-width: 1000px;
+       margin: 1.2rem;
+   }
+
+   .header_container {
+       padding: 50px;
+   }
+}
+
+/*for tablet*/
+@media (max-width: 768px) and (min-width: 481px) {
+    .project_container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .left_side_footer {
+        flex: 0 0 50%;
+    }
+    .right_side_footer {
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .svg_icon_box svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .svg_icon_box {
+        display: flex;
+        gap: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .footer_heading {
+        text-align: left;
+    }
+
+    .project_container {
+        display: grid;
+        padding: 1rem;
+        gap: 3rem;
+    }
+
+    .work_container {
+        padding-bottom: 5rem;
+    }
+
+    .project {
+        height: 400px;
+    }
+
+    #my_work {
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .about_me_container {
+        flex-direction: column;
+    }
+
+    .header_text{
+        width: 480px;
+        height: 300px;
+        background: url("borisk.jpg") center/cover no-repeat;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .content {
+        max-width: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+}
+
+/*for mobile*/
+@media (max-width: 480px ) {
+
+    .header_container {
+        padding: 2rem;
+    }
+
+    .header_text{
+        width: 480px;
+        height: 300px;
+        background: url("borisk.jpg") center/cover no-repeat;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .about_me_container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+
+    .svg_icon_box {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+    }
+
+    .svg_icon_box svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .project_container {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .project {
+        max-width: 480px;
+        height: 500px;
+    }
+
+
+    .footer_container {
+        flex-direction: column;
+    }
 
 }
